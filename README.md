@@ -2,7 +2,7 @@
 
 # 42 C++ Modules
 
-> *From procedural instincts to object-oriented mastery.*
+*From procedural instincts to object-oriented mastery.*
 
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![Makefile](https://img.shields.io/badge/Makefile-000000?style=for-the-badge&logo=gnu&logoColor=white)
@@ -12,66 +12,37 @@
 
 ---
 
-## 📚 About
+## About
 
-This repository contains my solutions to the **42 Network C++ modules (00–09)**.
+This repository contains my solutions to the **42 Network C++ Modules (00–09)**.
 
-Each module introduces progressively advanced concepts in **C++ (C++98 standard)** — starting from basic syntax and memory management, all the way to polymorphism, templates, and advanced OOP design principles.
+The modules progressively introduce core concepts of **C++ (C++98)** — from the basics (classes, namespaces, I/O) to more advanced topics like inheritance, polymorphism, exceptions, casts, templates, and STL fundamentals.
 
-The goal is not just to “finish exercises”, but to deeply understand how C++ works under the hood.
-
----
-
-## 🧩 Modules Overview
-
-### 🟢 Module 00 — Basics
-- Namespaces
-- Classes & member functions
-- `stdio` vs `iostream`
-
-### 🟢 Module 01 — Memory & References
-- New / delete
-- References vs pointers
-- File streams
-
-### 🟡 Module 02 — Ad-hoc polymorphism
-- Operator overloading
-- Orthodox Canonical Form
-
-### 🟡 Module 03 — Inheritance
-- Base & derived classes
-- Constructors / destructors chain
-
-### 🟠 Module 04 — Polymorphism
-- Virtual functions
-- Abstract classes
-- Interfaces
-
-### 🟠 Module 05 — Exceptions
-- Try / catch
-- Custom exceptions
-
-### 🔴 Module 06 — Casts
-- Static / dynamic / reinterpret casts
-- Type conversion safety
-
-### 🔴 Module 07 — Templates
-- Function templates
-- Class templates
-
-### 🔴 Module 08 — Containers (intro STL)
-- Iterators
-- Basic STL usage
-
-### ⚫ Module 09 — Advanced usage
-- Mixed concepts
-- STL + algorithms practice
+> The goal is not only to complete the exercises, but to build a strong understanding of how C++ works and how to write clean, maintainable OOP code.
 
 ---
 
-## 🏗️ Structure
-42-cpp-modules/
-│
+## Modules overview
+
+| Module | Focus | Key topics |
+|---|---|---|
+| **cpp00** | Basics | namespaces, classes, member functions, `iostream` |
+| **cpp01** | Memory & references | `new/delete`, references vs pointers, file streams |
+| **cpp02** | Ad-hoc polymorphism | operator overloading, canonical form |
+| **cpp03** | Inheritance | base/derived classes, constructor/destructor chain |
+| **cpp04** | Polymorphism | virtual functions, abstract classes, interfaces |
+| **cpp05** | Exceptions | `try/catch`, custom exceptions |
+| **cpp06** | Casts | `static_cast`, `dynamic_cast`, conversions |
+| **cpp07** | Templates | function & class templates |
+| **cpp08** | STL intro | containers, iterators, basic algorithms |
+| **cpp09** | Mixed advanced usage | combining concepts, algorithms practice |
+
+---
+
+## Repository structure
+
+```text
+Cpp-Modules/
 ├── cpp00/
 ├── cpp01/
 ├── cpp02/
@@ -82,46 +53,48 @@ The goal is not just to “finish exercises”, but to deeply understand how C++
 ├── cpp07/
 ├── cpp08/
 ├── cpp09/
-│
 └── README.md
+```
 
-Each module contains:
-- Exercises folders (`ex00`, `ex01`, ...)
-- Makefiles
-- Subject-compliant C++ files
+Each module typically contains:
+
+- exercise folders (`ex00`, `ex01`, ...)
+- a `Makefile`
+- subject-compliant `*.cpp` / `*.hpp` files
 
 ---
 
-## ⚙️ Compilation
+## Build & run
 
-All modules are designed for **C++98 standard**.
+All exercises are designed for **C++98**.
 
 ```bash
-# Compile any exercise
+# Example: compile an exercise
 cd cppXX/exYY
 make
 
 # Run
-./program_name
-Rules Followed
-• C++98 standard only
-• No external libraries (unless explicitly allowed)
-• Memory leaks avoided (where applicable)
-• Strict 42 formatting rules
-• Makefiles required for each exercise
+./<program>
+```
 
-Goal
-This repository aims to build strong foundations in:
-• Memory management in C++
-• Object-oriented programming
-• Templates and generic programming
-• STL fundamentals
-• Clean and modular architecture
+> The executable name depends on the exercise/Makefile.
 
-Author
+---
+
+## Notes / rules followed
+
+- C++98 only (per 42 subject)
+- no external libraries unless explicitly allowed
+- Makefile required for each exercise
+- focus on correctness, clean design, and avoiding leaks (where applicable)
+
+---
+
+## Author
+
 <div align="center">
 
-Built as part of the 42 Network curriculum
-by Othmane Elliq
+Built as part of the **42 Network** curriculum  
+by **Othmane Elliq**
 
 </div>
